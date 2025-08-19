@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String userId = (String) session.getAttribute("userId");
+    String userId = (String) session.getAttribute("userName");
     if (userId != null) {
         response.sendRedirect("post_list.jsp");
         return;

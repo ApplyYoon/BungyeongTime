@@ -8,12 +8,18 @@ CREATE TABLE post_tbl(
 	post_id varchar2(30) PRIMARY KEY,
 	user_id varchar2(30),
 	post_title varchar2(90),
-	post_body CLOB,
+	post_content CLOB,
 	post_suggest number,
 	post_report number
 );
 
-SELECT * FROM user_tbl;
+INSERT INTO post_tbl VALUES(
+	'1', 'test', 'TestTitle', 'TestContent', 0, 0
+);
 
+SELECT max(post_id)+1 FROM post_tbl;
+
+SELECT * FROM user_tbl;
+SELECT * FROM post_tbl;
 SELECT user_pw FROM user_tbl
 WHERE user_id = '1';
