@@ -60,11 +60,15 @@
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
+    margin: 5px 0; /* 버튼 위아래 간격 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* 부드러운 그림자 */
 }
 
 .main-btn:hover {
     background-color: #2980b9;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* 호버 시 그림자 강화 */
 }
+
 
 .main-btn.secondary {
     background-color: #2ecc71;
@@ -146,9 +150,8 @@
 .post-list-buttons {
     margin-top: 15px;
     display: flex;
-    gap: 15px;
+    gap: 10px; /* 15px → 10px로 줄여서 다른 버튼 간격과 비슷하게 */
 }
-
 .post-list-buttons .main-btn {
     flex: 1;
 }

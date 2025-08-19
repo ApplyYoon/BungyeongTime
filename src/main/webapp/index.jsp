@@ -15,7 +15,7 @@
 </head>
 <body class="index-body">
     <div class="index-container">
-        <h1 class="logo-title">📚 Bungyeong Time</h1>
+        <h1 class="logo-title">Bungyeong Time</h1>
         <p class="description">분당경영고 학생들을 위한 커뮤니티</p>
 
         <div class="button-group">

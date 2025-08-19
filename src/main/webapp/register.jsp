@@ -14,8 +14,8 @@
 
         <form action="RegisterServlet" method="post">
             <input type="text" name="userId" placeholder="아이디" class="form-input" required><br>
-            <input type="password" name="password" placeholder="비밀번호" class="form-input" required><br>
-            <input type="text" name="nickname" placeholder="닉네임" class="form-input" required><br>
+            <input type="password" name="userPassword" placeholder="비밀번호" class="form-input" required><br>
+            <input type="text" name="userName" placeholder="닉네임" class="form-input" required><br>
             <button type="submit" class="main-btn">가입하기</button>
         </form>
 
