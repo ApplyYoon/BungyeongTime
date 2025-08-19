@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -16,13 +17,15 @@
         <h1 class="logo-title">📋 전체 게시글</h1>
         <p class="description">분경 친구들의 이야기를 모아봤어요!</p>
 
-        <div class="post-list" id="post-list">
-            <div class="post-card">
-                <a href="post_detail.jsp?postId=1" class="post-title">오늘 급식 진짜 맛있었음ㅋㅋ</a>
-                <p class="post-info">작성자: bkyg123 | 추천: 4 | 신고: 0</p>
-            </div>
-        </div>
-
+        
+		<div class="post-list" id="post-list">
+	    	<c:forEach var="post" items="${postList}">
+	            <div class="post-card" onclick="location.href = 'post_detail.jsp?postId=${post.postId}'">
+	                <a class="post-title">${post.title}</a>
+	                <p class="post-info">작성자: ${post.userId} | 추천: ${post.suggest} | 신고: ${post.report}</p>
+	            </div>
+	    	</c:forEach>
+	    </div>
         <div class="post-list-buttons">
             <a href="post_write.jsp"><button class="main-btn">✏️ 게시글 작성</button></a>
             <a href="best_posts.jsp"><button class="main-btn secondary">🔥 베스트 글</button></a>

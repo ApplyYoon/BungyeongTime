@@ -63,7 +63,7 @@ public class PostWriteServlet extends HttpServlet {
 				DBUtil.close(conn, pstmt, rs);
 			}
 	        
-	        response.sendRedirect("post_list.jsp");
+	        response.sendRedirect("PostListServlet");
 	    }
 
 	    protected void doGet(HttpServletRequest request, HttpServletResponse response)

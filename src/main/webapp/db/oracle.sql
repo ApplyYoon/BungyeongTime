@@ -21,5 +21,6 @@ SELECT max(post_id)+1 FROM post_tbl;
 
 SELECT * FROM user_tbl;
 SELECT * FROM post_tbl;
+
 SELECT user_pw FROM user_tbl
 WHERE user_id = '1';
