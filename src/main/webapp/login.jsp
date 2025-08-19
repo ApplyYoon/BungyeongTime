@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +14,10 @@
         <p class="description">Bungyeong Time에 오신 것을 환영합니다!</p>
 
         <form action="LoginServlet" method="post">
+        	
             <input type="text" name="userId" placeholder="아이디" class="form-input" required><br>
             <input type="password" name="userPassword" placeholder="비밀번호" class="form-input" required><br>
+            <p style="color: red; font-size: 13px;">${message}</p>
             <button type="submit" class="main-btn">로그인</button>
         </form>
 
