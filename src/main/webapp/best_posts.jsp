@@ -26,7 +26,7 @@
             </div>
         </div>
         
-        <a href="post_list.jsp"><button class="main-btn">전체 게시글 보기</button></a>
+        <a href="PostListServlet"><button class="main-btn">전체 게시글 보기</button></a>
     </div>
 </body>
 </html>

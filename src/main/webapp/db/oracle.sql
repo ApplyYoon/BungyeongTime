@@ -17,10 +17,12 @@ INSERT INTO post_tbl VALUES(
 	'1', 'test', 'TestTitle', 'TestContent', 0, 0
 );
 
-SELECT max(post_id)+1 FROM post_tbl;
+SELECT NVL(MAX(TO_NUMBER(post_id)), 0) + 1 AS next_post_id FROM post_tbl;
 
 SELECT * FROM user_tbl;
 SELECT * FROM post_tbl;
 
 SELECT user_pw FROM user_tbl
 WHERE user_id = '1';
+
+DROP TABLE post_tbl

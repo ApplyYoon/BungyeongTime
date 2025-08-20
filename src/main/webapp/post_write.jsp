@@ -21,7 +21,7 @@
         </form>
 
         <div style="margin-top: 20px;">
-            <a href="post_list.jsp"><button class="main-btn secondary">← 돌아가기</button></a>
+            <a href="PostListServlet"><button class="main-btn secondary">← 돌아가기</button></a>
         </div>
     </div>
 </body>

@@ -7,7 +7,7 @@ import java.util.List;
 import model.PostDTO;
 import util.DBUtil;
 
-public class PostDAO {
+public class PostListDAO {
 
     public List<PostDTO> selectAllPosts() {
         List<PostDTO> posts = new ArrayList<>();
