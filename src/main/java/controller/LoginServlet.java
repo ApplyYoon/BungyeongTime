@@ -40,7 +40,6 @@ public class LoginServlet extends HttpServlet {
 		        	
 		        	HttpSession session = request.getSession();
 		        	String user_name = map.get("user_name");
-		            session.setAttribute("userId", userId);
 		            session.setAttribute("userName", user_name);
 		            response.sendRedirect("PostListServlet");
 		            return;

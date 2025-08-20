@@ -1,12 +1,12 @@
 CREATE TABLE user_tbl(
-	user_id varchar2(30) PRIMARY KEY,
+	user_id varchar2(30),
 	user_pw varchar2(128) NOT NULL,
-	user_name varchar2(60)
+	user_name varchar2(60) PRIMARY KEY
 );
 
 CREATE TABLE post_tbl(
 	post_id varchar2(30) PRIMARY KEY,
-	user_id varchar2(30),
+	user_name varchar2(60),
 	post_title varchar2(90),
 	post_content CLOB,
 	post_suggest number,
@@ -25,4 +25,7 @@ SELECT * FROM post_tbl;
 SELECT user_pw FROM user_tbl
 WHERE user_id = '1';
 
-DROP TABLE post_tbl
+DROP TABLE post_tbl;	
+DROP TABLE user_tbl;
+
+UPDATE post_tbl SET post_suggest = post_suggest + 1 WHERE post_id = '1';

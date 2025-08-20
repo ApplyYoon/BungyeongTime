@@ -20,9 +20,9 @@
         
 		<div class="post-list" id="post-list">
 	    	<c:forEach var="post" items="${postList}">
-	            <div class="post-card" onclick="location.href = 'post_detail.jsp?postId=${post.postId}'">
+	            <div class="post-card" onclick="location.href = 'PostDetailServlet?postId=${post.postId}'">
 	                <a class="post-title">${post.title}</a>
-	                <p class="post-info">작성자: ${post.userId}<br>추천: ${post.suggest}</p>
+	                <p class="post-info">작성자: ${post.userName}<br>추천: ${post.suggest}</p>
 	            </div>
 	    	</c:forEach>
 	    </div>

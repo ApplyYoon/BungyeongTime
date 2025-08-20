@@ -191,3 +191,10 @@
 .error-msg {
 
 }	
+
+.main-btn.danger {
+    background-color: #e74c3c;
+}
+.main-btn.danger:hover {
+    background-color: #c0392b;
+}

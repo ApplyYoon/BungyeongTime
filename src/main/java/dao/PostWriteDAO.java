@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import util.DBUtil;
 
 public class PostWriteDAO {
-	public void write(String userId, String title, String content) {
+	public void write(String userName, String title, String content) {
 		Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -22,7 +22,7 @@ public class PostWriteDAO {
 	        sql = "INSERT INTO post_tbl VALUES(?, ?, ?, ?, 0, 0)";
 	        pstmt = conn.prepareStatement(sql);
 	        pstmt.setString(1, post_id);
-	        pstmt.setString(2, userId);
+	        pstmt.setString(2, userName);
 	        pstmt.setString(3, title);
 	        pstmt.setString(4, content);
 	        pstmt.executeQuery();

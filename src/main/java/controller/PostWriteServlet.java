@@ -24,9 +24,10 @@ public class PostWriteServlet extends HttpServlet {
             throws ServletException, IOException {
 	        request.setCharacterEncoding("utf-8");
 	        String userId = "";
+	        String userName = "";
 	        HttpSession session = request.getSession(false); // 기존 세션만 가져옴 (없으면 null)
 	        if (session != null) {
-	            userId= (String) session.getAttribute("userId");
+	            userName= (String) session.getAttribute("userName");
 	        }
 	        
 	        String title = request.getParameter("title");
@@ -35,7 +36,7 @@ public class PostWriteServlet extends HttpServlet {
 	        System.out.println(content);
 	        System.out.println(userId);
 	        PostWriteDAO dao = new PostWriteDAO();
-	        dao.write(userId, title, content);
+	        dao.write(userName, title, content);
 	       
 	        
 	       

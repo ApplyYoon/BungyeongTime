@@ -23,7 +23,7 @@ public class PostListDAO {
 
             while(rs.next()) {
                 PostDTO post = new PostDTO();
-                post.setUserId(rs.getString("user_id"));
+                post.setUserName(rs.getString("user_name"));
                 post.setPostId(rs.getString("post_id"));
                 post.setTitle(rs.getString("post_title"));
                 post.setContent(rs.getString("post_content"));
