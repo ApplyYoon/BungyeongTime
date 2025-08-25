@@ -29,10 +29,6 @@
             <form action="SuggestPostServlet" method="post" style="flex: 1;">
                 <input type="hidden" name="postId" value="${postId}">
                 <button type="submit" class="main-btn secondary">👍 추천</button>
-            </form>
-            <form action="report_post.jsp" method="post" style="flex: 1;">
-                <input type="hidden" name="postId" value="${postId}">
-                <button type="submit" class="main-btn danger">🚨 신고</button>
             </form>	
         </div>
 

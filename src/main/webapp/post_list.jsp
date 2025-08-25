@@ -28,7 +28,6 @@
 	    </div>
         <div class="post-list-buttons">
             <a href="post_write.jsp"><button class="main-btn">✏️ 게시글 작성</button></a>
-            <a href="best_posts.jsp"><button class="main-btn secondary">🔥 베스트 글</button></a>
         </div>
     </div>
 </body>
